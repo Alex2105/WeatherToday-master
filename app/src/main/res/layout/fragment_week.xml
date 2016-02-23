@@ -1,0 +1,183 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.belichenko.a.weathertoday.MainActivity$PlaceholderFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/icon"
+        android:src="@mipmap/ic_launcher"
+        android:padding="20dp" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_data"
+            android:padding="10dp"
+            tools:text="Дата"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            tools:text="Общие описание"
+            android:id="@+id/text_information"/>
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eeeeee"
+    android:stretchColumns="*"
+    android:orientation="horizontal"
+    android:layout_below="@+id/linearLayout">
+    <TableRow>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_of_temperat"
+        android:padding="19dp"
+        tools:text="Название"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="19dp"
+        tools:text="Температура"
+        android:id="@+id/text_temperat"/>
+
+</TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_of_temperat_sence"
+            android:padding="19dp"
+            tools:text="Название"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="19dp"
+            tools:text="Чувствувать температуру"
+            android:id="@+id/text_temperat_sence"/>
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_of_atmosphere_pressure"
+            android:padding="19dp"
+            tools:text="Название"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="19dp"
+            tools:text="Атмосферное давление"
+            android:id="@+id/text_atmosphere_pressure"/>
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="19dp"
+            android:id="@+id/name_of_sunrise_sun"
+            tools:text="Название"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="19dp"
+            tools:text="Восход/Закат(Солнца)"
+            android:id="@+id/text_sunrise_sun"/>
+
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="19dp"
+            android:id="@+id/name_of_sunrise_moon"
+            tools:text="Название"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="19dp"
+            tools:text="Восход/Закат(Луны)"
+            android:id="@+id/text_sunrise_moon"/>
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_of_сhance"
+            android:padding="19dp"
+            tools:text="Название"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="19dp"
+            tools:text="Вероятность дождя, снега"
+            android:id="@+id/text_сhance"/>
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="19dp"
+            android:id="@+id/name_of_wind_speed"
+            tools:text="Название"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="19dp"
+            tools:text="Скорость Ветра"
+            android:id="@+id/text_wind_speed"/>
+
+    </TableRow>
+
+
+</TableLayout>
+
+
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
